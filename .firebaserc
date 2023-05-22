@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "joonshopapp"
+  },
+  "targets": {
+    "joonshopapp": {
+      "hosting": {
+        "src": [
+          "joonshopapp"
+        ]
+      }
+    }
   }
 }
