@@ -1,10 +1,10 @@
 import './App.css'
-import { BrowserRouter, Route } from 'react-router-dom'
+import { BrowserRouter, Route, Switch, Link, NavLink } from 'react-router-dom'
 
 // page components
 import Home from './pages/Home'
-import About from './pages/About'
-import Contact from './pages/Contact'
+import About from './pages/Register'
+import Contact from './pages/Login'
 
 function App() {
   return (
@@ -12,17 +12,25 @@ function App() {
       <BrowserRouter>
         <nav>
           <h1>My Articles</h1>
+          {/* <Link to="/">Home</Link>
+          <Link to="/about">About</Link>
+          <Link to="/contact">Contact</Link> */}
+          <NavLink exact to="/">Home</NavLink>
+          <NavLink to="/register">Register</NavLink>
+          <NavLink to="/login">Login</NavLink>
         </nav>
 
-        <Route path="/">
-          <Home />  
-        </Route>
-        <Route path="/about">
-          <About />  
-        </Route>
-        <Route path="/contact">
-          <Contact />  
-        </Route>
+        <Switch>
+          <Route exact path="/">
+            <Home />  
+          </Route>
+          <Route path="/register">
+            <About />  
+          </Route>
+          <Route path="/login">
+            <Contact />  
+          </Route>
+        </Switch>
         
       </BrowserRouter>
     </div>
