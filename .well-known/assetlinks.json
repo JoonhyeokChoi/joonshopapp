@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.joonshop",
+    "sha256_cert_fingerprints":
+    ["13:04:9B:CE:45:58:BB:99:9C:86:8A:38:37:B2:3D:7E:6D:D3:49:A5:F5:2C:17:28:4D:49:CC:12:23:32:CA:41"]
+  }
+}]
