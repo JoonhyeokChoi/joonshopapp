@@ -5,7 +5,7 @@
   "targets": {
     "joonshopapp": {
       "hosting": {
-        "src": [
+        "default": [
           "joonshopapp"
         ]
       }
